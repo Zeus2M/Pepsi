@@ -1,0 +1,179 @@
+/* Pepsi-Website */
+*{
+margin: 0;
+scroll-behavior: smooth;
+}
+body{
+    background-color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    
+}
+
+/* Side-bar */
+.sidebar{
+    display: none;
+}
+
+
+
+/* Navigation-bar */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+a:hover{
+    opacity: 0.7;
+}
+
+/* nav-left */
+.nav-left{
+    display: flex;
+    gap: 20px;
+}
+
+/* Menu */
+#menu {
+    display: none;
+    z-index: 2;
+}
+#menu div{
+    background-color: white;
+    height: 4px;
+    width: 30px;
+    border-radius: 5px;
+    margin-top: 5px;   
+}
+
+/* Main */
+main{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;    
+}
+.my{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.h{
+  text-shadow: 10px 10px 4px rgba(0, 0, 0, 0.356);  
+  font-weight: 600;
+  display: inline-block;
+  max-width: 440px;
+  font-size: 70px;
+  text-align: start;
+   
+}
+ .list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.h1{
+    text-shadow: 10px 10px 4px rgba(0, 0, 0, 0.356);
+      max-width: 440px;
+   text-align: start;
+   font-weight: 100;
+}
+main button{
+    border-radius: 20px;
+    height: 30px;
+    width: 180px;
+    border-color: grey;
+}
+.white{
+    height: 300px;
+}
+.right{
+display: flex;
+}
+.icon{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+@media (max-width:600px) {
+    main{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    #menu{
+        display: block;
+    }
+    .nav-left{
+        display: none;
+    }
+     .sidebar {
+      width: 250px;
+      height: 100vh;
+      background: red;
+      color: white;
+      position: fixed;
+      right: -250px; 
+      transition: left 0.3s ease;
+      top: 0;
+      display: block;
+    }
+   
+
+   
+    
+    .sidebar.active {
+       right: 0; 
+    }
+  
+}
+.bluepep{
+    height: 60px;
+    width: 90px;
+    cursor: pointer;
+}
+.bluepep:hover{
+    transform: scale(1.2);
+}
+.whitepep{
+    height: 55px;
+    width: 75px;
+    cursor: pointer;
+}
+.whitepep:hover{
+     transform: scale(1.2);
+}
+.blackpep{
+    height: 70px;
+    width: 100px;
+    cursor: pointer;
+}
+.blackpep:hover{
+     transform: scale(1.2);
+}
+.si{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+
+}
+@media (max-width:320px) {
+  .right{
+        display: block;
+    }
+    .icon{
+        display: flex;
+        flex-direction: row;
+      justify-self: center;
+    }
+}
